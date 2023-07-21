@@ -246,7 +246,8 @@ Kelebihan dari model _collaborative filtering_ adalah hasil rekomendasi barang d
 
 Metrik evaluasi yang digunakan pada model _content-based filtering_ adalah similaritas cosinus (_cosine similarity_). Similaritas cosinus mengukur perbedaan cosinus sudut antara dua vektor. Berikut adalah formula dari similaritas cosinus:
 
-$$ sim(x,y)= \frac{{\mathbf{x} \cdot \mathbf{y}}}{{\|\mathbf{x}\| \cdot \|\mathbf{y}\|}}$$
+$$ sim(x,y)= \frac{{\mathbf{x} \cdot \mathbf{y}}}{{\|\mathbf{x}\| \cdot \|\mathbf{y}\|}} $$
+
 dimana:
 - $\mathbf{x} = (x_1, x_2, ..., x_p)$ adalah vektor pertama
 - $\mathbf{y} = (y_1, y_2, ..., y_p)$ adalah vektor kedua
@@ -279,8 +280,8 @@ $$RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2}$$
 
 dimana:
 - n adalah banyak data observasi,
-- $y_i$ adalah nilai aktual target untuk observasi data ke-$i$,
-- $\hat{y_i}$ adalah nilai prediksi target untuk observasi data ke-$i$.
+- $y_i$ adalah nilai aktual target untuk observasi data ke- $i$,
+- $\hat{y_i}$ adalah nilai prediksi target untuk observasi data ke- $i$.
 
 Metrik evaluasi kedua yang digunakan adalah **_mean absolute error_**. Formula tersebut diaplikasikan pada keluaran dari fungsi _sigmoid_ pada model `Recommender` terhadap nilai _rating_ aktual data pelatihan. _Mean absolute error_ menghitung nilai absolut dari selisih nilai prediksi dengan nilai aktual. _Mean absolute error_ dapat digunakan untuk kasus analisis regresi non-linear, sehingga cocok digunakan untuk sebagai perhitungan galat pada proyek ini. Berikut adalah formula dari _mean absolute error_:
 
@@ -288,8 +289,8 @@ $$MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y_i}|$$
 
 dimana:
 - n adalah banyak data observasi,
-- $y_i$ adalah nilai aktual target untuk observasi data ke-$i$,
-- $\hat{y_i}$ adalah nilai prediksi target untuk observasi data ke-$i$.
+- $y_i$ adalah nilai aktual target untuk observasi data ke- $i$,
+- $\hat{y_i}$ adalah nilai prediksi target untuk observasi data ke- $i$.
 
 
 
